@@ -3,9 +3,6 @@ import heroBg from './assets/portfolio-site/Cat 6.jfif'
 import my_prof_pics_bw from './assets/portfolio-site/my_prof_pics_bw.png'
 import about_Page_Img from './assets/portfolio-site/praize.jpeg'
 import serviceImg from './assets/portfolio-site/praize_4.jpeg'
-import personF5 from './assets/portfolio-site/person/person-f-5.webp'
-import personF12 from './assets/portfolio-site/person/person-f-12.webp'
-import personM9 from './assets/portfolio-site/person/person-m-9.webp'
 import portfolio1 from './assets/portfolio-site/portfolio/Nextflow Web App.png'
 import portfolio2 from './assets/portfolio-site/portfolio/portfolio-2.webp'
 import portfolio3 from './assets/portfolio-site/portfolio/Quiz App img.png'
@@ -19,7 +16,9 @@ import portfolio10 from './assets/portfolio-site/portfolio/portfolio-10.webp'
 import portfolio11 from './assets/portfolio-site/portfolio/portfolio-11.webp'
 import portfolio12 from './assets/portfolio-site/portfolio/portfolio-12.webp'
 
-const roles = ['Web Developer', 'React Developer', 'Tailwind CSS Expert', 'WordPress/CMS Expert', 'Full Stack Developer', 'Web App Developer', 'Performance Optimizer']
+const linkedInUrl = 'https://www.linkedin.com/in/clementpraize-dev/'
+
+const roles = ['Web Developer', 'Tailwind CSS Expert', 'Responsive Web Developer' , 'WordPress/CMS Developer']
 
 const navItems = [
   ['Home', '#home'],
@@ -31,19 +30,18 @@ const navItems = [
 ]
 
 const stats = [
-  ['232', 'Issues Resolved'],
-  ['521', 'Commits Shipped'],
-  ['1463', 'Build Hours'],
-  ['15', 'Tech Stacks'],
+  ['React', 'Frontend UI'],
+  ['Tailwind CSS', 'Responsive Styling'],
+  ['WordPress', 'CMS Builds'],
+  ['Node.js', 'Backend APIs'],
 ]
 
 const details = [
-  ['Birthday', '24 August 2000'],
   ['Website', 'praize.dev'],
   ['Phone', '+234 911 347 9030'],
   ['City', 'Lagos, Nigeria'],
-  ['Age', '26'],
   ['Email', 'clementpraize02@gmail.com'],
+  ['LinkedIn', 'clementpraize-dev', linkedInUrl],
   ['Freelance', 'Available'],
 ]
 
@@ -86,9 +84,9 @@ const resume = [
       {
         role: 'Nsikak Praize Clement',
         period: '',
-        place: 'Web Developer',
-        copy: 'Detail-focused web developer building responsive websites, React applications, WordPress projects, and practical backend features for real business needs.',
-        bullets: ['Lagos, Nigeria', '+234 911 347 9030', 'clementpraize02@gmail.com'],
+        place: 'Web Developer | Frontend Developer | React Developer',
+        copy: 'Detail-focused developer building responsive websites, React interfaces, WordPress/CMS projects, and practical backend features for real business needs.',
+        bullets: ['Lagos, Nigeria', '+234 911 347 9030', 'clementpraize02@gmail.com', 'linkedin.com/in/clementpraize-dev'],
       },
     ],
   },
@@ -97,14 +95,14 @@ const resume = [
     items: [
       {
         role: 'Full Stack Web Development',
-        period: '2023 - Present',
+        period: '2026 - Present',
         place: 'Project-based learning and client work',
         copy: 'Focused on React, JavaScript, Node.js, Express, WordPress, responsive development, and production deployment workflows.',
       },
       {
         role: 'Frontend Development Foundations',
-        period: '2021 - 2023',
-        place: 'Self-directed technical training',
+        period: '2025 - 2026',
+        place: 'Coriftech Solution',
         copy: 'Built a strong foundation in HTML, CSS, Bootstrap, Tailwind CSS, JavaScript, version control, and responsive web standards.',
       },
     ],
@@ -113,26 +111,35 @@ const resume = [
     title: 'Professional Experience',
     items: [
       {
-        role: 'Web Developer',
-        period: '2024 - Present',
-        place: 'Freelance and personal projects',
+        role: 'Frontend Engineer',
+        period: 'Jul 2026 - Present',
+        place: 'Coriftech Solutions · Full-time · Delta State, Nigeria · Hybrid',
+        copy: 'Frontend engineering role at Coriftech Solutions following a three-month internship with the team.',
         bullets: [
-          'Build responsive websites and web applications with React, Tailwind CSS, JavaScript, and WordPress.',
-          'Create reusable components, clean page structures, and mobile-friendly interfaces for client and portfolio projects.',
-          'Connect frontend experiences to practical backend workflows using Node.js, Express, and form handling.',
-          'Improve page speed, accessibility, hosting setup, and cross-device reliability before launch.',
+          'Build and maintain responsive frontend interfaces for production web projects.',
+          'Collaborate in a hybrid development workflow while contributing to UI implementation and frontend improvements.',
         ],
       },
       {
-        role: 'Frontend Developer',
-        period: '2022 - 2024',
-        place: 'Training projects and website builds',
+        role: 'Frontend Engineer (Intern)',
+        period: 'Apr 2026 - Jun 2026',
+        place: 'Coriftech Solutions · Internship · Delta State, Nigeria · Hybrid',
         bullets: [
-          'Converted static layouts into responsive HTML, CSS, Bootstrap, and Tailwind CSS pages.',
-          'Built interactive JavaScript features including navigation, filtering, forms, and dynamic content sections.',
-          'Practiced Git-based workflows for tracking changes and organizing project iterations.',
-          'Maintained clear, readable code that is easier to update and hand off.',
+          'Completed a three-month frontend engineering internship focused on practical web development workflows.',
+          'Supported responsive UI implementation, frontend structure, and project delivery tasks.',
         ],
+      },
+      {
+        role: 'Founder | Lead Developer | Nexflow (AI Code Assistant)',
+        period: 'May 2026 - Present',
+        place: 'Nexflow · Contract',
+        bullets: [
+          'Architecting and developing a professional-grade, AI-driven developer SaaS platform utilizing the React ecosystem.',
+          'Engineering scalable front-end architecture using React and Vite, focusing on developer productivity and highly responsive user interfaces.',
+          'Integrating modern tooling and state management to handle AI code completion, automated testing, smart debugging, and real-time data flows.',
+          'Tech Stack: JavaScript (ES6+), React, Vite, Tailwind CSS.',
+        ],
+        link: ['Check Nexflow app', 'https://nexflow-app-ten.vercel.app/'],
       },
     ],
   },
@@ -141,7 +148,7 @@ const resume = [
 const filters = ['All', 'Web App', 'Website', 'E-commerce', 'CMS']
 
 const portfolio = [
-  ['Task Manager App', 'Web App', portfolio1],
+  ['Nextflow App', 'Web App', portfolio1],
   ['Business Landing Page', 'Website', portfolio10],
   ['Quiz App', 'Web App', portfolio3, 'https://quiz-app-66ww.vercel.app/'],
   ['WordPress Blog', 'CMS', portfolio4],
@@ -155,10 +162,10 @@ const portfolio = [
   ['Custom CMS Pages', 'CMS', portfolio6],
 ]
 
-const testimonials = [
-  ['Saul Goodman', 'CEO & Founder', personM9, 'Praize shipped a fast, responsive site with clean implementation details and a smoother customer flow.'],
-  ['Sara Wilsson', 'Product Manager', personF5, 'He translated requirements into reusable React components and kept the codebase organized from start to finish.'],
-  ['Jena Karlis', 'Store Owner', personF12, 'Our online store became faster, easier to maintain, and simpler to extend after the rebuild.'],
+const profileHighlights = [
+  ['Responsive Interfaces', 'Websites and apps are built mobile-first with clean layout structure, accessible interactions, and maintainable styling.'],
+  ['React + JavaScript', 'Project work centers on component-driven React, JavaScript features, reusable UI patterns, and Vite-based workflows.'],
+  ['CMS + Backend Support', 'WordPress/CMS builds, practical Node.js endpoints, form handling, and deployment-minded delivery round out the stack.'],
 ]
 
 function SectionHeading({ eyebrow, title, copy }) {
@@ -173,17 +180,36 @@ function SectionHeading({ eyebrow, title, copy }) {
 
 function App() {
   const [roleIndex, setRoleIndex] = useState(0)
+  const [roleText, setRoleText] = useState('')
+  const [isDeletingRole, setIsDeletingRole] = useState(false)
   const [menuOpen, setMenuOpen] = useState(false)
   const [filter, setFilter] = useState('All')
   const [sent, setSent] = useState(false)
 
   useEffect(() => {
-    const timer = window.setInterval(() => {
-      setRoleIndex((current) => (current + 1) % roles.length)
-    }, 1800)
+    const currentRole = roles[roleIndex]
+    const roleIsComplete = roleText === currentRole
+    const roleIsEmpty = roleText.length === 0
+    const delay = roleIsComplete && !isDeletingRole ? 1000 : isDeletingRole ? 45 : 85
 
-    return () => window.clearInterval(timer)
-  }, [])
+    const timer = window.setTimeout(() => {
+      if (!isDeletingRole && roleIsComplete) {
+        setIsDeletingRole(true)
+        return
+      }
+
+      if (isDeletingRole && roleIsEmpty) {
+        setIsDeletingRole(false)
+        setRoleIndex((current) => (current + 1) % roles.length)
+        return
+      }
+
+      const nextLength = roleText.length + (isDeletingRole ? -1 : 1)
+      setRoleText(currentRole.slice(0, nextLength))
+    }, delay)
+
+    return () => window.clearTimeout(timer)
+  }, [isDeletingRole, roleIndex, roleText])
 
   const visiblePortfolio = useMemo(() => {
     if (filter === 'All') return portfolio
@@ -244,10 +270,14 @@ function App() {
               <p className="text-sm font-semibold uppercase tracking-[0.26em] text-emerald-300">Portfolio</p>
               <h1 className="mt-5 text-5xl font-black leading-none text-white sm:text-7xl lg:text-8xl">Nsikak Praize Clement</h1>
               <p className="mt-6 max-w-2xl text-2xl font-light text-zinc-100 sm:text-3xl">
-                I'm a <span className="font-semibold text-emerald-300">{roles[roleIndex]}</span>
+                I'm a{' '}
+                <span className="inline-flex min-h-[1.2em] items-center font-semibold text-emerald-300" aria-live="polite">
+                  {roleText}
+                  <span className="ml-1 inline-block h-7 w-[2px] animate-pulse bg-emerald-300 sm:h-8" aria-hidden="true" />
+                </span>
               </p>
               <p className="mt-6 max-w-2xl text-lg leading-8 text-zinc-300">
-                A focused web developer building responsive React apps, practical backend workflows, CMS projects, and production-ready websites.
+                Web developer focused on responsive React interfaces, Tailwind CSS layouts, WordPress/CMS projects, and practical backend workflows.
               </p>
               <div className="mt-8 flex flex-wrap gap-3">
                 <a href="#portfolio" className="rounded bg-emerald-400 px-5 py-3 text-sm font-bold text-zinc-950 transition hover:bg-emerald-300">
@@ -255,6 +285,9 @@ function App() {
                 </a>
                 <a href="#contact" className="rounded border border-white/20 px-5 py-3 text-sm font-bold text-white transition hover:border-emerald-300 hover:text-emerald-200">
                   Contact Me
+                </a>
+                <a href={linkedInUrl} target="_blank" rel="noreferrer" className="rounded border border-emerald-300/50 px-5 py-3 text-sm font-bold text-emerald-200 transition hover:bg-emerald-300 hover:text-zinc-950">
+                  LinkedIn
                 </a>
               </div>
             </div>
@@ -281,14 +314,20 @@ function App() {
               <div className="flex flex-col justify-center">
                 <p className="text-lg leading-8 text-zinc-300">
                   I develop websites and web applications with attention to maintainable code, responsive behavior, API workflows,
-                  performance, and reliable handoff. The work is practical, production-minded, and built to keep improving after launch.
+                  CMS content needs, performance, and reliable handoff. The work is practical, production-minded, and built to keep improving after launch.
                 </p>
 
                 <div className="mt-8 grid gap-4 sm:grid-cols-2">
-                  {details.map(([label, value]) => (
+                  {details.map(([label, value, href]) => (
                     <div key={label} className="border-l-2 border-emerald-400 bg-white/[0.03] px-4 py-3">
                       <p className="text-xs font-semibold uppercase tracking-[0.18em] text-zinc-500">{label}</p>
-                      <p className="mt-1 font-medium text-zinc-100">{value}</p>
+                      {href ? (
+                        <a href={href} target="_blank" rel="noreferrer" className="mt-1 inline-block font-medium text-emerald-200 transition hover:text-emerald-300">
+                          {value}
+                        </a>
+                      ) : (
+                        <p className="mt-1 font-medium text-zinc-100">{value}</p>
+                      )}
                     </div>
                   ))}
                 </div>
@@ -298,7 +337,7 @@ function App() {
             <div className="mt-16 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
               {stats.map(([number, label]) => (
                 <div key={label} className="border border-white/10 bg-zinc-900 p-6 text-center">
-                  <p className="text-4xl font-black text-emerald-300">{number}</p>
+                  <p className="text-2xl font-black text-emerald-300">{number}</p>
                   <p className="mt-2 text-sm text-zinc-400">{label}</p>
                 </div>
               ))}
@@ -357,6 +396,11 @@ function App() {
                               <li key={bullet}>{bullet}</li>
                             ))}
                           </ul>
+                        ) : null}
+                        {item.link ? (
+                          <a href={item.link[1]} target="_blank" rel="noreferrer" className="mt-4 inline-block text-sm font-bold text-emerald-300 transition hover:text-emerald-200">
+                            {item.link[0]}
+                          </a>
                         ) : null}
                       </article>
                     ))}
@@ -428,18 +472,13 @@ function App() {
 
         <section className="px-5 py-24 sm:px-8">
           <div className="mx-auto max-w-7xl">
-            <SectionHeading eyebrow="Testimonials" title="Developer Feedback" />
+            <SectionHeading eyebrow="Profile" title="Professional Highlights" copy="A concise profile snapshot aligned with the same developer positioning used across the portfolio." />
             <div className="grid gap-5 md:grid-cols-3">
-              {testimonials.map(([name, title, image, quote]) => (
-                <article key={name} className="border border-white/10 bg-zinc-900 p-6">
-                  <p className="text-sm leading-6 text-zinc-300">"{quote}"</p>
-                  <div className="mt-6 flex items-center gap-4">
-                    <img src={image} alt={name} className="h-14 w-14 rounded-full object-cover" />
-                    <div>
-                      <h3 className="font-bold text-white">{name}</h3>
-                      <p className="text-sm text-zinc-500">{title}</p>
-                    </div>
-                  </div>
+              {profileHighlights.map(([title, copy], index) => (
+                <article key={title} className="border border-white/10 bg-zinc-900 p-6">
+                  <p className="text-sm font-black text-rose-300">{String(index + 1).padStart(2, '0')}</p>
+                  <h3 className="mt-4 text-xl font-bold text-white">{title}</h3>
+                  <p className="mt-3 text-sm leading-6 text-zinc-400">{copy}</p>
                 </article>
               ))}
             </div>
@@ -455,11 +494,17 @@ function App() {
                   ['Location', 'Lagos, Nigeria'],
                   ['Call Me', '+234 911 347 9030'],
                   ['Email', 'clementpraize02@gmail.com'],
-                  ['Profiles', 'GitHub / LinkedIn / Portfolio'],
-                ].map(([label, value]) => (
+                  ['LinkedIn', 'linkedin.com/in/clementpraize-dev', linkedInUrl],
+                ].map(([label, value, href]) => (
                   <div key={label} className="border border-white/10 bg-zinc-950 p-5">
                     <p className="text-sm font-semibold uppercase tracking-[0.18em] text-emerald-300">{label}</p>
-                    <p className="mt-2 text-zinc-300">{value}</p>
+                    {href ? (
+                      <a href={href} target="_blank" rel="noreferrer" className="mt-2 inline-block text-zinc-300 transition hover:text-emerald-300">
+                        {value}
+                      </a>
+                    ) : (
+                      <p className="mt-2 text-zinc-300">{value}</p>
+                    )}
                   </div>
                 ))}
               </div>
@@ -490,6 +535,9 @@ function App() {
       <footer className="border-t border-white/10 px-5 py-10 text-center text-sm text-zinc-500 sm:px-8">
         <p className="font-bold text-white">Praize.dev</p>
         <p className="mt-2">Developer portfolio built with React, Tailwind CSS, and production-ready frontend patterns.</p>
+        <a href={linkedInUrl} target="_blank" rel="noreferrer" className="mt-3 inline-block font-medium text-emerald-300 transition hover:text-emerald-200">
+          linkedin.com/in/clementpraize-dev
+        </a>
       </footer>
     </div>
   )
