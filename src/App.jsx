@@ -148,7 +148,7 @@ const resume = [
 const filters = ['All', 'Web App', 'Website', 'E-commerce', 'CMS']
 
 const portfolio = [
-  ['Nextflow App', 'Web App', portfolio1],
+  ['Nextflow App', 'Web App', portfolio1, " "],
   ['Business Landing Page', 'Website', portfolio10],
   ['Quiz App', 'Web App', portfolio3, 'https://quiz-app-66ww.vercel.app/'],
   ['WordPress Blog', 'CMS', portfolio4],
@@ -448,7 +448,7 @@ function App() {
             </div>
 
             <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
-              {visiblePortfolio.map(([title, category, image, link]) => {
+              {visiblePortfolio.map(([title, category, image, body, link]) => {
                 const Card = link ? 'a' : 'article'
 
                 return (
@@ -459,7 +459,7 @@ function App() {
                       <div>
                         <p className="text-xs font-semibold uppercase tracking-[0.18em] text-emerald-300">{category}</p>
                         <h3 className="mt-1 text-xl font-bold text-white">{title}</h3>
-                        <p className="mt-1 text-sm text-zinc-300">Built with responsive structure, maintainable components, and launch-ready details.</p>
+                        <p className="mt-1 text-sm text-zinc-300">{body}</p>
                       </div>
                     </div>
                   </div>
